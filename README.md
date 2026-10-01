@@ -41,6 +41,12 @@ While cards are dealt, each card shows the LLM's verdict (✓ / ✗). The strip 
 
 The UI doesn't say the LLM numbers are simulated. If you show this outside the team, say so yourself.
 
+## Jev explainer page
+
+`jev.html` (http://localhost:5178/jev.html, linked from the idle screen) explains what Jev is and compares it with LLMs: a live race on three example inputs, latency vs number of questions, a calibration dot plot with a threshold slider, a cost calculator, a side-by-side table, a quiz and LangChain harness patterns. It's a second React entry (`src/explainer/main.tsx`) that reuses the demo's `styles.css`, so it shares the demo's look: `Explainer.tsx` for the page, `RaceDemo.tsx` and `Interactives.tsx` for the interactive parts, `examples.ts` for the content and models. Like the comparison above, the race and charts are simulations built from TypeSafe's published ranges, not measurements.
+
+Sources: [TypeSafe launch post](https://typesafe.ai/blog/introducing-system-one-models-and-jev), [LangChain](https://www.langchain.com/blog/building-a-harness-with-jev), [Lenny's Newsletter](https://www.lennysnewsletter.com/p/jev-for-beginners-how-to-use-it-and), [Vercel](https://vercel.com/i/what-is-jev).
+
 ## URL flags
 
 | Flag | Effect |

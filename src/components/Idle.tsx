@@ -55,6 +55,10 @@ export function Idle({ dragging, samples, onSample, onFile }: Props) {
             </a>
           </span>
         ))}
+        {' · '}
+        <a className="idle-link" href="jev.html">
+          How Jev compares with an LLM
+        </a>
       </div>
     </div>
   )
